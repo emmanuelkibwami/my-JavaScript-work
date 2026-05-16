@@ -1,0 +1,11 @@
+.product-table{
+width:  100%;
+border-collapse: collapse;
+margin: 20px 0;
+font-family: arial, sans-serif;
+font-size: 16px;
+}
+.product-table td  {
+padding: 10px;
+border-bottom: 1px solid #ddd;
+}

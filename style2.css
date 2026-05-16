@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Gneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ADD8E6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: red;
+
+    img {
+        width: 30%;
+    }
+
+    img: hover {
+        animation: zoom-in 2s linear infinite;
+    }
+
+    @keyframes zoom-in {
+        0% {
+            width: 10%;
+        }
+
+        100% {
+            width: 70%;
+        }
+    }
+
+    .container {
+        transform: rotate(0deg);
+        transition: transform 3s;
+        border: 5px solid yellow;
+        width: 100%;
+
+        :hover {
+            transform: rotate(360deg);
+        }
+
+    }
+
+}
+
+.navbar {
+    dislay: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #fff;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+p {
+    color: #FF0000
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.logo span {
+    color: #3498db;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #3498db;
+}
+
+.footer {
+    background-color: #1a202c;
+    color: #cbd5eo;
+    padding: 60px 0 20px;
+}
